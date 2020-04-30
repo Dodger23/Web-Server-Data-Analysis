@@ -87,6 +87,7 @@ step_n %>%
 
 
 
+
 ## Aggregated by Day
 day_n <- data %>% 
     group_by(day = floor_date(data_timeline$timeline, "day")) %>% 
@@ -158,7 +159,6 @@ top_n(request_n, n=20, n) %>%
         panel.border = element_blank(),
         axis.ticks.y = element_blank()
     )
-
 
 
 
