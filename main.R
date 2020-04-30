@@ -120,7 +120,6 @@ dat_hour %>%
 
 
 
-
 ## Aggregate dy IP
 ip_n <- data_timeline %>% group_by(ip) %>% summarise(n=n())
 
@@ -159,6 +158,7 @@ top_n(request_n, n=20, n) %>%
         panel.border = element_blank(),
         axis.ticks.y = element_blank()
     )
+
 
 
 
